@@ -1,0 +1,14 @@
+org:
+  jobrunr:
+    background-job-server:
+      enabled: true
+      poll-interval-in-seconds: 5
+    job-scheduler:
+      enabled: true
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      auto-commit: false # When auto-commit was set to `false` causes ConcurrentModificationException!!
+
